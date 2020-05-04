@@ -1,0 +1,1 @@
+plot for [i=0:6] "iteracje.out" index i u 1:2 with lp

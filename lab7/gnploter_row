@@ -1,0 +1,6 @@
+set terminal png
+
+do for[i=0:3]{
+    set o sprintf("wykres_row%d",i+1)
+    p "rownolegle.out" index i u 1:2 w l, 1./(1+x**2) title "f(x)"
+}
